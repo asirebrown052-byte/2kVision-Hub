@@ -1,0 +1,7 @@
+opencv-python==4.8.1.78
+numpy==1.24.3
+pyds4==0.6.0
+PyQt5==5.15.9
+PyInstaller==6.1.0
+requests==2.31.0
+python-dotenv==1.0.0
