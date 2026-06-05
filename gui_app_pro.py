@@ -43,7 +43,8 @@ except ImportError:
     pyxinput = None
 
 # Discord OAuth Settings
-DISCORD_CLIENT_ID = "YOUR_CLIENT_ID_HERE"  # Set this to your Discord app ID
+DISCORD_CLIENT_ID = "1510175057929044121"
+DISCORD_CLIENT_SECRET = "bJHxxIhhTO-4vTIgOUTlBIvbmghZoOXK"
 DISCORD_REDIRECT_URI = "http://localhost:3000/callback"
 DISCORD_AUTH_URL = f"https://discord.com/api/oauth2/authorize?client_id={DISCORD_CLIENT_ID}&redirect_uri={DISCORD_REDIRECT_URI}&response_type=code&scope=identify+guilds+guilds.members.read"
 
@@ -199,7 +200,7 @@ class DiscordAuthDialog(QDialog):
         try:
             data = {
                 "client_id": DISCORD_CLIENT_ID,
-                "client_secret": "YOUR_CLIENT_SECRET_HERE",  # Set this!
+                "client_secret": DISCORD_CLIENT_SECRET,
                 "grant_type": "authorization_code",
                 "code": code,
                 "redirect_uri": DISCORD_REDIRECT_URI,
