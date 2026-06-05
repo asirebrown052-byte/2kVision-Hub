@@ -24,9 +24,7 @@ from PyQt5.QtWidgets import (
     QMessageBox,
 )
 from PyQt5.QtGui import QImage, QPixmap, QFont, QColor
-from PyQt5.QtCore import Qt, QTimer, pyqtSignal, QThread, QUrl
-from PyQt5.QtWebEngineWidgets import QWebEngineView
-from PyQt5.QtWebEngineCore import QWebEnginePage
+from PyQt5.QtCore import Qt, QTimer, pyqtSignal, QThread
 import requests
 import json
 import os
